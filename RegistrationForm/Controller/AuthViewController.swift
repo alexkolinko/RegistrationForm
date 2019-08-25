@@ -52,15 +52,19 @@ class AuthViewController: UIViewController {
     @IBAction func facebookAction(_ sender: UIButton) {
         let login = LoginManager()
         login.logIn(permissions: ["email", "public_profile"], from: self) { (result, error) in
-            if error == nil {
-                GraphRequest(graphPath: "me", parameters: ["fields":"email, name"], tokenString: AccessToken.current?.tokenString, version: nil, httpMethod: HTTPMethod(rawValue: "GET")).start { (nil, result, error) in
-                    if error == nil {
-                        let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
-                        Auth.auth().signIn(with: credential, completion: { (result, error) in
-                            if error == nil {
-                                self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
-                            }
-                        })
+            if result!.isCancelled {
+                print("is cancelled")
+            } else {
+                if error == nil {
+                    GraphRequest(graphPath: "me", parameters: ["fields":"email, name"], tokenString: AccessToken.current?.tokenString, version: nil, httpMethod: HTTPMethod(rawValue: "GET")).start { (nil, result, error) in
+                        if error == nil {
+                            let credential = FacebookAuthProvider.credential(withAccessToken: AccessToken.current!.tokenString)
+                            Auth.auth().signIn(with: credential, completion: { (result, error) in
+                                if error == nil {
+                                    self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
+                                }
+                            })
+                        }
                     }
                 }
             }
