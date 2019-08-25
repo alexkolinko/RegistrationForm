@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>766391896872-u4j1tq4iv2gjiankdcohttj6bpcvfno3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.766391896872-u4j1tq4iv2gjiankdcohttj6bpcvfno3</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCl55LZGpgmEaQ5UC-1EYgaSlk6z5yw5QM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>766391896872</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.alexkolinko.RegistrationForm</string>
+	<key>PROJECT_ID</key>
+	<string>registrationform-c9aca</string>
+	<key>STORAGE_BUCKET</key>
+	<string>registrationform-c9aca.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:766391896872:ios:ab1fab11b4b9e785</string>
+	<key>DATABASE_URL</key>
+	<string>https://registrationform-c9aca.firebaseio.com</string>
+</dict>
+</plist>
