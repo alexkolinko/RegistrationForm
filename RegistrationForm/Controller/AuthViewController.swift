@@ -29,6 +29,13 @@ class AuthViewController: UIViewController {
         backgraund.backgroundImage(view: self.view, image: imageBackgraund)
     }
     
+    override func viewDidAppear(_ animated: Bool){
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
+        }
+    }
+    
     func setupButton() {
         buttonCastom.layerWithFrame(sampleButton: loginButton, title: "Войти")
         buttonCastom.layerWithFrame(sampleButton: registrationButton, title: "Регистрация")

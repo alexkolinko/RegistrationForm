@@ -26,6 +26,10 @@ class UserViewController: UIViewController {
         setupBackgraund()
         setpButton()
         setupAvatarImage()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         setupGetData()
     }
     
