@@ -23,6 +23,7 @@
 		4B3AB87B231280D300D13C03 /* BackgraundMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB87A231280D300D13C03 /* BackgraundMethod.swift */; };
 		4B3AB87D2312817000D13C03 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB87C2312817000D13C03 /* Validator.swift */; };
 		4B3AB87F231286D900D13C03 /* RegisterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB87E231286D900D13C03 /* RegisterData.swift */; };
+		4B3AB88223129E5D00D13C03 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B3AB88123129E5D00D13C03 /* Lato-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		4B3AB87A231280D300D13C03 /* BackgraundMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgraundMethod.swift; sourceTree = "<group>"; };
 		4B3AB87C2312817000D13C03 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		4B3AB87E231286D900D13C03 /* RegisterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterData.swift; sourceTree = "<group>"; };
+		4B3AB88123129E5D00D13C03 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../Downloads/Lato/Lato-Regular.ttf"; sourceTree = "<group>"; };
 		6BE9D8355051222E54457875 /* Pods_RegistrationForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegistrationForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C599E0347BBF2C19A487849B /* Pods-RegistrationForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegistrationForm.release.xcconfig"; path = "Target Support Files/Pods-RegistrationForm/Pods-RegistrationForm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +95,7 @@
 				4B3622542312432F008AE36D /* LaunchScreen.storyboard */,
 				4B3622572312432F008AE36D /* Info.plist */,
 				4B3AB86C23125EB500D13C03 /* GoogleService-Info.plist */,
+				4B3AB88123129E5D00D13C03 /* Lato-Regular.ttf */,
 			);
 			path = RegistrationForm;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			files = (
 				4B3622562312432F008AE36D /* LaunchScreen.storyboard in Resources */,
 				4B3AB86D23125EB500D13C03 /* GoogleService-Info.plist in Resources */,
+				4B3AB88223129E5D00D13C03 /* Lato-Regular.ttf in Resources */,
 				4B3622532312432F008AE36D /* Assets.xcassets in Resources */,
 				4B3622512312432D008AE36D /* Main.storyboard in Resources */,
 			);

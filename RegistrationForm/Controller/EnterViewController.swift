@@ -48,11 +48,11 @@ class EnterViewController: UIViewController {
     func setupTextField() {
         emailField.backgroundColor = UIColor.clear
         emailField.borderStyle = .none
-        emailField.attributedPlaceholder = NSAttributedString(string:"введите почту", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        emailField.attributedPlaceholder = NSAttributedString(string:"введите почту", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(white: 1, alpha: 0.5)])
         emailField.addUnderline()
         passwordField.backgroundColor = UIColor.clear
         passwordField.borderStyle = .none
-        passwordField.attributedPlaceholder = NSAttributedString(string:"введите пароль", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
+        passwordField.attributedPlaceholder = NSAttributedString(string:"введите пароль", attributes: [NSAttributedString.Key.foregroundColor: UIColor.init(white: 1, alpha: 0.5)])
         passwordField.addUnderline()
     }
     
