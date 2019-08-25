@@ -12,18 +12,39 @@ import FBSDKLoginKit
 
 class UserViewController: UIViewController {
     
+    let backgraund = BackgraundMethod.sharedInstance
+    let imageBackgraund = "Background"
+    let buttonCastom = UIButton()
+    
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var avatarImage: UIImageView!
+    @IBOutlet weak var logoutButtom: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        avatarImage.layer.cornerRadius = 70/2
+        setupBackgraund()
+        setpButton()
+        setupAvatarImage()
+        setupGetData()
+    }
+    
+    func setupBackgraund() {
+        backgraund.backgroundImage(view: self.view, image: imageBackgraund)
+    }
+    
+    func setpButton() {
+        buttonCastom.layerWithFrame(sampleButton: logoutButtom, title: "Выйти")
+    }
+    
+    func setupAvatarImage() {
+        avatarImage.layer.cornerRadius = avatarImage.frame.size.width/2
         avatarImage.layer.borderWidth = 1.0
         avatarImage.layer.borderColor = UIColor.white.cgColor
         avatarImage.clipsToBounds = true
-        
+    }
+    
+    func setupGetData() {
         if AccessToken.current != nil {
             FacebookManager.getUserData(completion: {
                 self.userNameLabel.text = User.currentUser.name
@@ -31,10 +52,9 @@ class UserViewController: UIViewController {
                 self.avatarImage.image = try! UIImage(data: Data(contentsOf: URL(string: User.currentUser.pictureURL!)!))
             })
         }
-        
     }
-
-    @IBAction func logoutButton(_ sender: UIButton) {
+    
+    @IBAction func logoutAction(_ sender: UIButton) {
         do {
             try Auth.auth().signOut()
         }

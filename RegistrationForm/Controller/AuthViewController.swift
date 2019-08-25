@@ -12,16 +12,41 @@ import FirebaseAuth
 
 class AuthViewController: UIViewController {
     
+    let backgraund = BackgraundMethod.sharedInstance
+    let imageBackgraund = "Background"
+    let buttonCastom = UIButton()
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var registrationButton: UIButton!
+    @IBOutlet weak var facebookButton: UIButton!
+    @IBOutlet weak var googleButton: UIButton!
+    @IBOutlet weak var forgotPasswordButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupNavigationBar()
+        setupButton()
+        backgraund.backgroundImage(view: self.view, image: imageBackgraund)
     }
     
-    override func viewDidAppear(_ animated: Bool){
-        super.viewDidAppear(animated)
-        if Auth.auth().currentUser != nil {
-            self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
-        }
+    func setupButton() {
+        buttonCastom.layerWithFrame(sampleButton: loginButton, title: "Войти")
+        buttonCastom.layerWithFrame(sampleButton: registrationButton, title: "Регистрация")
+        buttonCastom.layerWithoutFrame(sampleButton: facebookButton, title: "Войти через Facebook")
+        buttonCastom.layerWithoutFrame(sampleButton: googleButton, title: "Войти через Google")
+        buttonCastom.layerWithoutFrame(sampleButton: forgotPasswordButton, title: "Забыли пароль?")
+        registrationButton.isEnabled = false
+        googleButton.isEnabled = false
+        forgotPasswordButton.isEnabled = false
+    }
+    
+    func setupNavigationBar() {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.tintColor = .white
+    }
+    
+    @IBAction func loginAction(_ sender: UIButton) {
     }
     
     @IBAction func facebookAction(_ sender: UIButton) {

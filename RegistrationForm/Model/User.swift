@@ -10,11 +10,11 @@ import Foundation
 import SwiftyJSON
 
 class User {
+    
+    static let currentUser = User()
     var name: String?
     var email: String?
     var pictureURL: String?
-    
-    static let currentUser = User()
     
     func setUser(_ json: JSON) {
         self.name = json["name"].string

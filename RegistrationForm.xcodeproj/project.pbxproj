@@ -17,6 +17,12 @@
 		4B3AB86F2312646C00D13C03 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB86E2312646C00D13C03 /* UserViewController.swift */; };
 		4B3AB8712312707000D13C03 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB8702312707000D13C03 /* FacebookManager.swift */; };
 		4B3AB873231270E200D13C03 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB872231270E200D13C03 /* User.swift */; };
+		4B3AB87523127D4400D13C03 /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB87423127D4400D13C03 /* EnterViewController.swift */; };
+		4B3AB8772312803E00D13C03 /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB8762312803E00D13C03 /* Extension+UIButton.swift */; };
+		4B3AB8792312808F00D13C03 /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB8782312808F00D13C03 /* Extension+UITextField.swift */; };
+		4B3AB87B231280D300D13C03 /* BackgraundMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB87A231280D300D13C03 /* BackgraundMethod.swift */; };
+		4B3AB87D2312817000D13C03 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB87C2312817000D13C03 /* Validator.swift */; };
+		4B3AB87F231286D900D13C03 /* RegisterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3AB87E231286D900D13C03 /* RegisterData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		4B3AB86E2312646C00D13C03 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		4B3AB8702312707000D13C03 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
 		4B3AB872231270E200D13C03 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4B3AB87423127D4400D13C03 /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
+		4B3AB8762312803E00D13C03 /* Extension+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
+		4B3AB8782312808F00D13C03 /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
+		4B3AB87A231280D300D13C03 /* BackgraundMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgraundMethod.swift; sourceTree = "<group>"; };
+		4B3AB87C2312817000D13C03 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		4B3AB87E231286D900D13C03 /* RegisterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterData.swift; sourceTree = "<group>"; };
 		6BE9D8355051222E54457875 /* Pods_RegistrationForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegistrationForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C599E0347BBF2C19A487849B /* Pods-RegistrationForm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegistrationForm.release.xcconfig"; path = "Target Support Files/Pods-RegistrationForm/Pods-RegistrationForm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +83,8 @@
 			children = (
 				4B36224B2312432D008AE36D /* AppDelegate.swift */,
 				4B3AB8702312707000D13C03 /* FacebookManager.swift */,
+				4B3AB87A231280D300D13C03 /* BackgraundMethod.swift */,
+				4B3AB87C2312817000D13C03 /* Validator.swift */,
 				4B36225F23124380008AE36D /* Controller */,
 				4B36225E23124376008AE36D /* Model */,
 				4B36225D2312435B008AE36D /* Extensions */,
@@ -86,6 +100,8 @@
 		4B36225D2312435B008AE36D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4B3AB8762312803E00D13C03 /* Extension+UIButton.swift */,
+				4B3AB8782312808F00D13C03 /* Extension+UITextField.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -94,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				4B3AB872231270E200D13C03 /* User.swift */,
+				4B3AB87E231286D900D13C03 /* RegisterData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +120,7 @@
 			children = (
 				4B36224D2312432D008AE36D /* AuthViewController.swift */,
 				4B3AB86E2312646C00D13C03 /* UserViewController.swift */,
+				4B3AB87423127D4400D13C03 /* EnterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,9 +260,15 @@
 			files = (
 				4B36224E2312432D008AE36D /* AuthViewController.swift in Sources */,
 				4B3AB8712312707000D13C03 /* FacebookManager.swift in Sources */,
+				4B3AB87D2312817000D13C03 /* Validator.swift in Sources */,
+				4B3AB87F231286D900D13C03 /* RegisterData.swift in Sources */,
 				4B3AB86F2312646C00D13C03 /* UserViewController.swift in Sources */,
+				4B3AB8772312803E00D13C03 /* Extension+UIButton.swift in Sources */,
 				4B3AB873231270E200D13C03 /* User.swift in Sources */,
+				4B3AB8792312808F00D13C03 /* Extension+UITextField.swift in Sources */,
 				4B36224C2312432D008AE36D /* AppDelegate.swift in Sources */,
+				4B3AB87523127D4400D13C03 /* EnterViewController.swift in Sources */,
+				4B3AB87B231280D300D13C03 /* BackgraundMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
