@@ -16,6 +16,7 @@ class AuthViewController: UIViewController {
     let imageBackgraund = "Background"
     let buttonCastom = UIButton()
     
+    @IBOutlet weak var toNewFirstVCButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registrationButton: UIButton!
     @IBOutlet weak var facebookButton: UIButton!
@@ -56,6 +57,9 @@ class AuthViewController: UIViewController {
     @IBAction func loginAction(_ sender: UIButton) {
     }
     
+    @IBAction func toNewFirstVCButtonAction(_ sender: UIButton) {
+        
+    }
     @IBAction func facebookAction(_ sender: UIButton) {
         let login = LoginManager()
         login.logIn(permissions: ["email", "public_profile"], from: self) { (result, error) in
